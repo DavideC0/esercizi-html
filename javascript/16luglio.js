@@ -36,3 +36,18 @@ function terminaConLettera(sStringa, sTermine) {
 var gigi = "franczp";
 var fine = "z";
 console.log(terminaConLettera(gigi, fine));
+
+function macchinetta(iSoldi, sCodiceProdotto) {
+    if (sCodiceProdotto == "31") {
+        if (iSoldi < 1) {
+            return {null:null, iSoldi};
+        }
+        if (iSoldi == 1) {
+            return  {CocaCola, 0:0};
+        }
+        if (iSoldi > 1) {
+            iSoldi = iSoldi - 1
+            return {CocaCola, iSoldi};
+        }
+    }
+}
