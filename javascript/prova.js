@@ -12,7 +12,7 @@ function controll(number) {
     return false
 }
 
-const prompt = require('prompt-sync')();
+var prompt = require('prompt-sync')();
 const str = prompt('Enter a string: ');
 console.log('Hai inserito dopo ' + str);
 console.log('Hai inserito dopo ' + capitalizeFirstLetter(str));
@@ -59,7 +59,7 @@ function parseIntMy(sNum)
 
     return null;
 }
-const prompt = require('prompt-sync')();
+var prompt = require('prompt-sync')();
 var sPrimoNum = prompt("Inserisci primo numero ");
 var iNum = parseIntMy(sPrimoNum);
 if(iNum != null)
