@@ -24,3 +24,15 @@ if (iPosizione == -1)
     console.log("La letterea f non si trova nella stringa " + sStringa)
 else
     console.log("La letterea f si trova nella stringa " + sStringa + " al carattere numero " + iPosizione)
+
+function terminaConLettera(sStringa, sTermine) {
+    var iRitorno = sStringa.indexOf(sTermine, sStringa.lenght - sTermine.lenght);
+    if (iRitorno == -1)
+        return 0;
+    else
+        return 1;
+}
+
+var gigi = "franczp";
+var fine = "z";
+console.log(terminaConLettera(gigi, fine));
